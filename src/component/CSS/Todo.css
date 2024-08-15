@@ -1,0 +1,135 @@
+
+.todo {
+    width: 600px;
+    min-height: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 200px auto 5px auto;
+    padding: 0 54px 30px 54px;
+    border-radius: 30px;
+}
+
+.header {
+    color: rgb(9, 36, 22);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 20px;
+    line-height: 30px;
+    user-select: none;
+}
+
+.todo_add {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.todo_add input {
+    width: 450px;
+    height: 42px;
+    border-radius: 30px;
+    padding: 0 40px 0 20px;
+    font-size: 15px;
+}
+
+.add_btn {
+    height: 35px;
+    width: 120px;
+    background-color: rgb(20, 218, 53);
+    padding-top: 10px;
+    border-radius: 30px;
+    margin: -70px;
+    margin-right: 2px;
+    user-select: none;
+}
+
+.add_btn:hover {
+    background-color: rgb(81, 171, 87);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.todo_items img {
+    height: 30px;
+    width: 30px;
+    user-select: none;
+}
+
+.todo_items #cancel:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.todo_items #tick:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.todo_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(110, 177, 228);
+    border-radius: 40px;
+    margin: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+#tick {
+    position: absolute;
+    right: 75px;
+}
+
+#cancel {
+    position: absolute;
+    right: 32px;
+}
+.task_name{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 320px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    user-select: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.clear{
+    background-color: #d77f7f;
+    width: 80px;
+    height: 30px;
+    padding-top: 15px;
+    margin-left: 250px;
+    border-radius: 25px;
+    line-height: 15px;
+}
+.clear:hover{
+    color: #fff;
+    background-color: #d83636;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fade-enter{
+    opacity: 0;
+}
+.fade-enter-active{
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.fade-exit{
+    opacity:1;
+}
+.fade-exit-active{
+    opacity:0;
+    transition: opacity 400ms;
+}
